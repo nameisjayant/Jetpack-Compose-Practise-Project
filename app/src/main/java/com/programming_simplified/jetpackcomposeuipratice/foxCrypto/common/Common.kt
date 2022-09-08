@@ -14,7 +14,7 @@ import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsSemiBo
 
 
 @Composable
-fun Text_35_SemiBold(
+fun Text_35_5_SemiBold(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
