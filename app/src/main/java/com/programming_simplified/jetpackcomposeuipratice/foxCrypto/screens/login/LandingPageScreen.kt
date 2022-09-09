@@ -2,25 +2,16 @@ package com.programming_simplified.jetpackcomposeuipratice.foxCrypto.screens.log
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.programming_simplified.jetpackcomposeuipratice.R
 import com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common.CommonButton
-import com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common.Text_15_61_Regular
-import com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common.Text_35_5_SemiBold
+import com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common.Text_35_5_600
 import com.programming_simplified.jetpackcomposeuipratice.ui.theme.BrandColor1
 import com.programming_simplified.jetpackcomposeuipratice.ui.theme.BrandColor2
 
@@ -39,7 +30,7 @@ fun LandingPageScreen() {
         Column {
             Img()
             Spacer(modifier = Modifier.height(50.dp))
-            Text_35_5_SemiBold(text = stringResource(id = R.string.landing_text))
+            Text_35_5_600(text = stringResource(id = R.string.landing_text))
         }
         Row(
             modifier = Modifier.fillMaxWidth(),

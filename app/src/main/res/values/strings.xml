@@ -5,4 +5,8 @@
     <string name="login">Log in</string>
     <string name="Verification">Verification</string>
     <string name="verify">Verify</string>
+    <string name="email">Email Address</string>
+    <string name="enter_email">"Enter Email "</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
 </resources>

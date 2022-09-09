@@ -2,16 +2,6 @@ package com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Text
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -19,13 +9,12 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.Center
 import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.textInputServiceFactory
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -33,7 +22,7 @@ import com.programming_simplified.jetpackcomposeuipratice.ui.theme.*
 
 
 @Composable
-fun Text_35_5_SemiBold(
+fun Text_35_5_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -42,14 +31,15 @@ fun Text_35_5_SemiBold(
     Text(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
-            fontFamily = PoppinsSemiBold,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600,
             fontSize = 35.5.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_19_97_Regular(
+fun Text_19_97_500(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -59,13 +49,15 @@ fun Text_19_97_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W500 ,
             fontSize = 19.97.sp
         ), textAlign = textAlign
     )
 }
 
+
 @Composable
-fun Text_19_97_Medium(
+fun Text_19_99_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -74,46 +66,15 @@ fun Text_19_97_Medium(
     Text(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
-            fontFamily = PoppinsMedium,
-            fontSize = 19.97.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_19_99_SemiBold(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsSemiBold,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
             fontSize = 19.99.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_15_55_Medium(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsMedium,
-            fontSize = 19.97.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_17_77_Regular(
+fun Text_15_55_500(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -123,29 +84,14 @@ fun Text_17_77_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
-            fontSize = 17.77.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_15_55_Regular(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W500 ,
             fontSize = 15.55.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_19_99_Regular(
+fun Text_17_77_400(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -155,6 +101,41 @@ fun Text_19_99_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W400 ,
+            fontSize = 17.77.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_15_55_400(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W400 ,
+            fontSize = 15.55.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_19_99_500(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W500 ,
             fontSize = 19.99.sp
         ), textAlign = textAlign
     )
@@ -397,7 +378,7 @@ fun CommonHeader(
             Icon(Icons.Default.ArrowBack, contentDescription = "back arrow", tint = BasicColor2)
         }
 
-        Text_19_99_SemiBold(
+        Text_19_99_600(
             text = text,
             color = Color.White,
             modifier = Modifier.align(CenterVertically)
@@ -415,7 +396,9 @@ fun CommonLargeButton(
 ) {
 
     Card(
-        modifier = Modifier.fillMaxWidth().height(53.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(53.dp),
         elevation = CardDefaults.cardElevation(0.dp),
         shape = RoundedCornerShape(12.dp)
     ) {
@@ -445,8 +428,12 @@ fun CommonButton(
         border = BorderStroke(2.dp, BrandColor2),
         modifier = Modifier.width(168.dp)
     ) {
-        Box(modifier = Modifier.fillMaxWidth().background(background), contentAlignment = Alignment.Center) {
-            Text_19_97_Medium(
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(background), contentAlignment = Alignment.Center
+        ) {
+            Text_19_97_500(
                 text = text,
                 modifier = Modifier.padding(vertical = 10.dp),
                 color = textColor
@@ -455,3 +442,41 @@ fun CommonButton(
     }
 
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CommonTextField(
+    textLabel: String,
+    text: String,
+    placeholder: String,
+    onValueChange: (String) -> Unit
+) {
+    Column() {
+        Text_15_55_500(text = textLabel, color = BasicColor2)
+        Spacer(modifier = Modifier.height(5.dp))
+        TextField(
+            value = text, onValueChange = {
+                onValueChange(it)
+            },
+            modifier = Modifier
+                .fillMaxWidth(),
+            placeholder = { Text_17_77_400(text = placeholder, color = BasicColor2) },
+            colors = TextFieldDefaults.textFieldColors(
+                unfocusedIndicatorColor = Color.Transparent,
+                focusedIndicatorColor = Color.Transparent,
+                containerColor = BasicColor1
+            ),
+            textStyle = TextStyle(
+                color = Color.White
+            ),
+            shape = RoundedCornerShape(13.dp)
+        )
+
+    }
+}
+
+
+
+
+
+
