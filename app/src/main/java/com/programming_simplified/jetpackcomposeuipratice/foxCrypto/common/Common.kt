@@ -1,16 +1,23 @@
 package com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common
 
-import androidx.compose.material3.Text
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Alignment.Companion.Center
+import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.textInputServiceFactory
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsMedium
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsRegular
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsSemiBold
+import com.programming_simplified.jetpackcomposeuipratice.ui.theme.*
 
 
 @Composable
@@ -363,4 +370,53 @@ fun Text_13_31_Medium(
             fontSize = 17.85.sp
         ), textAlign = textAlign
     )
+}
+
+@Composable
+fun CommonHeader(
+    text: String
+) {
+
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        IconButton(onClick = { }) {
+            Icon(Icons.Default.ArrowBack, contentDescription = "back arrow", tint = BasicColor2)
+        }
+
+        Text_19_99_SemiBold(
+            text = text,
+            color = Color.White,
+            modifier = Modifier.align(CenterVertically)
+        )
+        Box {
+
+        }
+    }
+
+}
+
+@Composable
+fun CommonLargeButton(
+    text: String
+) {
+
+    Card(
+        modifier = Modifier.fillMaxWidth().height(53.dp),
+        elevation = CardDefaults.cardElevation(0.dp),
+        shape = RoundedCornerShape(12.dp)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(BrandColor2), contentAlignment = Center
+        ) {
+            Text_19_99_Medium(
+                text = text,
+                color = BrandColor1
+            )
+        }
+    }
+
 }

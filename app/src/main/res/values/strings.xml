@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Jetpack Compose  Ui Pratice</string>
+    <string name="Verification">Verification</string>
+    <string name="verify">Verify</string>
 </resources>
