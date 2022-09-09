@@ -1,16 +1,26 @@
 package com.programming_simplified.jetpackcomposeuipratice.foxCrypto.common
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.textInputServiceFactory
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsMedium
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsRegular
-import com.programming_simplified.jetpackcomposeuipratice.ui.theme.PoppinsSemiBold
+import com.programming_simplified.jetpackcomposeuipratice.ui.theme.*
 
 
 @Composable
@@ -363,4 +373,27 @@ fun Text_13_31_Medium(
             fontSize = 17.85.sp
         ), textAlign = textAlign
     )
+}
+
+@Composable
+fun CommonButton(
+    text: String,
+    background: Color = BrandColor1,
+    textColor: Color = BrandColor1
+) {
+    Card(
+        shape = RoundedCornerShape(13.dp),
+        elevation = CardDefaults.cardElevation(0.dp),
+        border = BorderStroke(2.dp, BrandColor2),
+        modifier = Modifier.width(168.dp)
+    ) {
+        Box(modifier = Modifier.fillMaxWidth().background(background), contentAlignment = Alignment.Center) {
+            Text_19_97_Medium(
+                text = text,
+                modifier = Modifier.padding(vertical = 10.dp),
+                color = textColor
+            )
+        }
+    }
+
 }

@@ -1,5 +1,7 @@
 package com.programming_simplified.jetpackcomposeuipratice.ui.theme
 
+import androidx.compose.material.Colors
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 val Purple80 = Color(0xFFD0BCFF)
@@ -16,3 +18,5 @@ val BrandColor2 = Color(0XFFF5C249)
 val BasicColor1 = Color(0XFF21242D)
 val BasicColor2 = Color(0XFFA7AEBF)
 val BasicColor3 = Color(0XFFF8F8F8)
+
+
