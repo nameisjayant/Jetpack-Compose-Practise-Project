@@ -3,4 +3,6 @@
     <string name="landing_text">Fast and Flexible Trading</string>
     <string name="signup">Sign Up</string>
     <string name="login">Log in</string>
+    <string name="Verification">Verification</string>
+    <string name="verify">Verify</string>
 </resources>
