@@ -142,71 +142,7 @@ fun Text_19_99_500(
 }
 
 @Composable
-fun Text_26_66_SemiBold(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsSemiBold,
-            fontSize = 26_66.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_17_77_Medium(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsMedium,
-            fontSize = 17.77.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_19_99_Medium(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsMedium,
-            fontSize = 19.99.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_17_77_SemiBold(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsSemiBold,
-            fontSize = 17.77.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_13_32_Regular(
+fun Text_26_65_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -216,29 +152,50 @@ fun Text_13_32_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
+            fontSize = 26_65.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_17_77_600(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
+            fontSize = 17.77.sp
+        ), textAlign = textAlign
+    )
+}
+
+
+
+@Composable
+fun Text_13_32_400(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W400 ,
             fontSize = 13.32.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_26_74_SemiBold(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsSemiBold,
-            fontSize = 26.74.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_15_6_Regular(
+fun Text_26_74_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -248,7 +205,25 @@ fun Text_15_6_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
-            fontSize = 15.6.sp
+            fontWeight = FontWeight.W600 ,
+            fontSize = 26.74.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_15_61_400(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W400 ,
+            fontSize = 15.61.sp
         ), textAlign = textAlign
     )
 }
@@ -270,7 +245,7 @@ fun Text_15_61_Regular(
 }
 
 @Composable
-fun Text_35_69_SemiBold(
+fun Text_35_69_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -279,14 +254,15 @@ fun Text_35_69_SemiBold(
     Text(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
-            fontFamily = PoppinsSemiBold,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
             fontSize = 35.69.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_20_08_SemiBold(
+fun Text_20_06_500(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -295,7 +271,25 @@ fun Text_20_08_SemiBold(
     Text(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
-            fontFamily = PoppinsSemiBold,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W500 ,
+            fontSize = 20.06.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_20_08_600(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
             fontSize = 20.08.sp
         ), textAlign = textAlign
     )
@@ -318,23 +312,7 @@ fun Text_13_38_Regular(
 }
 
 @Composable
-fun Text_17_85_SemiBold(
-    text: String,
-    modifier: Modifier = Modifier,
-    color: Color = Color.White,
-    textAlign: TextAlign = TextAlign.Start
-) {
-    Text(
-        text = text, modifier = modifier, style = TextStyle(
-            color = color,
-            fontFamily = PoppinsSemiBold,
-            fontSize = 17.85.sp
-        ), textAlign = textAlign
-    )
-}
-
-@Composable
-fun Text_17_85_Regular(
+fun Text_17_85_600(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -344,13 +322,14 @@ fun Text_17_85_Regular(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
             fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
             fontSize = 17.85.sp
         ), textAlign = textAlign
     )
 }
 
 @Composable
-fun Text_13_31_Medium(
+fun Text_17_85_400(
     text: String,
     modifier: Modifier = Modifier,
     color: Color = Color.White,
@@ -359,8 +338,43 @@ fun Text_13_31_Medium(
     Text(
         text = text, modifier = modifier, style = TextStyle(
             color = color,
-            fontFamily = PoppinsSemiBold,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W400 ,
             fontSize = 17.85.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_13_31_500(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W500 ,
+            fontSize = 13.31.sp
+        ), textAlign = textAlign
+    )
+}
+
+@Composable
+fun Text_13_38_400(
+    text: String,
+    modifier: Modifier = Modifier,
+    color: Color = Color.White,
+    textAlign: TextAlign = TextAlign.Start
+) {
+    Text(
+        text = text, modifier = modifier, style = TextStyle(
+            color = color,
+            fontFamily = PoppinsRegular,
+            fontWeight = FontWeight.W600 ,
+            fontSize = 13.38.sp
         ), textAlign = textAlign
     )
 }
@@ -407,7 +421,7 @@ fun CommonLargeButton(
                 .fillMaxSize()
                 .background(BrandColor2), contentAlignment = Center
         ) {
-            Text_19_99_Medium(
+            Text_19_97_500(
                 text = text,
                 color = BrandColor1
             )
